@@ -44,7 +44,7 @@ export  default function NewProduct () {
             const reader = new FileReader();
 
             reader.onload = () => {
-                if(reader.readyState == 2 ) {
+                if(reader.readyState === 2 ) {
                     setImagesPreview(oldArray => [...oldArray, reader.result])
                     setImages(oldArray => [...oldArray, file])
                 }
